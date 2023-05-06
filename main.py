@@ -25,8 +25,6 @@ def index():
     # Get the current file name
     current_file = file_names[current_file_index]
 
-    return render_template('index.html',
-                            file=current_file,
-                            current_file=current_file)
+    return render_template('index.html',file=current_file,current_file=current_file)
 
 app.run(host='0.0.0.0', port=81)
