@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image Swapper</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+
+  <body>
+    <h1>Lizzie-Olsen</h1>
+    <form method="post">
+      <button type="submit" name="previous" value="previous">Previous</button>
+      <button type="submit" name="next" value="next">Next</button>
+      <input type="hidden" name="current_file" value="{{ current_file }}">
+    </form>
+    <img src="{{ url_for('static', filename=file) }}" alt="Lizzie">
+  </body>
+</html>
